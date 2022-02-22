@@ -9,6 +9,7 @@ import PeopleIcon from '@mui/icons-material/People';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import Link from '@mui/material/Link';
 
 export const mainListItems = (
   <React.Fragment>
@@ -16,13 +17,19 @@ export const mainListItems = (
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-      <ListItemText primary="Dashboard" />
+      <Link href="/About" underline="none">
+       {'About'}
+      </Link>
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
         <ShoppingCartIcon />
       </ListItemIcon>
-      <ListItemText primary="Orders" />
+      <ListItemText>
+        <Link href="/" underline="hover">
+        {'Home'}
+        </Link>
+      </ListItemText>
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>

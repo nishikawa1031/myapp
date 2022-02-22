@@ -122,6 +122,7 @@ function DashboardContent() {
                     color="text.primary"
                     href="/"
                     sx={{ my: 1, mx: 1.5 }}
+                    underline="none"
                 >
                     Features
                 </Link>

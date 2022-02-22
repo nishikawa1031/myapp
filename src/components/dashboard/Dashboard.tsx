@@ -10,18 +10,11 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import Badge from '@mui/material/Badge';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
-import Chart from './Chart';
-import Deposits from './Deposits';
-import Orders from './Orders';
-
 import { Router } from "../../Router"
 
 function Copyright(props: any) {
@@ -124,7 +117,14 @@ function DashboardContent() {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Dashboard
+                <Link
+                    variant="subtitle1"
+                    color="text.primary"
+                    href="/"
+                    sx={{ my: 1, mx: 1.5 }}
+                >
+                    Features
+                </Link>
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">

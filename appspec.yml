@@ -3,4 +3,18 @@ os: linux
 
 files:
   - source: /                    # 同期元
-    destination: /var/www # 同期先
+    destination: /var/www/ # 同期先
+
+hooks:
+  ApplicationStop:
+    - location: scripts/application_stop
+      timeout: 300
+      runas: root
+  BeforeInstall:
+    - location: scripts/before_install
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/application_start
+      timeout: 300
+      runas: root

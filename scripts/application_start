@@ -1,5 +1,3 @@
 #!/bin/bash
 
 systemctl start nginx
-sudo npm install
-sudo npm start

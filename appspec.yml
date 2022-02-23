@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /                    # 同期元
-    destination: /var/www/ # 同期先
+    destination: /var/www/myapp/ # 同期先
 
 hooks:
   ApplicationStop:
